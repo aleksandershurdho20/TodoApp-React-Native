@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, Button,ScrollView,FlatList,TouchableOpacity, Al
 import Header from './Components/Header'
 import TodoItem from './Components/TodoItem'
 import AddTodo from './Components/AddTodo'
+import Sandbox from './Components/Sandbox'
 export default function App() {
   const [todos,setTodos]=useState([
     {text:'buy coffee', key:'1'},
@@ -38,6 +39,7 @@ export default function App() {
 
   }
   return (
+    // <Sandbox/>
     <TouchableWithoutFeedback onPress={()=> {
       Keyboard.dismiss();
 
@@ -73,10 +75,14 @@ const styles = StyleSheet.create({
     // paddingHorizontal:20
   },
   content:{
-    padding:40
+    padding:40,
+    flex:1,
+    backgroundColor:'#fff'
   },
   list:{
-    marginTop:20
+    flex:1,
+    marginTop:20,
+    
   }
   
   
