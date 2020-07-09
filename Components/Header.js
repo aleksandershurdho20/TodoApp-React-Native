@@ -17,6 +17,6 @@ export default function Header (){
         textAlign:'center',
         color:'#FFF',
         fontSize:20,
-        fontWeight:bold
+        fontWeight:'bold'
     }
   })
